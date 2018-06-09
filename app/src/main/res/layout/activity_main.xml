@@ -1,33 +1,56 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context = ".MainActivity">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src ="@drawable/androidparty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-light"
-        android:text="Happy Birthday Cookie!"
-        android:textColor="@android:color/white"
-        android:textSize="36sp"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/theblacklist"
+        android:text="Happy Birthday Cookie"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="52dp"
+        android:layout_marginTop="90dp"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        app:fontFamily="sans-serif-condensed"
+        android:padding="16dp"
+        android:text="Birthdays are a new start, a beginning and a time to pursue new endeavors with new goals.Move forward with confidence and courage. You are a speacial person and i love you. May your days be amazing"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From C-Jay"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:fontFamily="sans-serif-light"
-        android:text="From Nicholas"
-        android:textColor="@android:color/white"
-        android:textSize="36sp"
+        android:layout_alignParentEnd="true"
+        android:padding="16dp"
+        android:textSize="44sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/theblacklist"
+        android:layout_marginBottom="90dp"
+
         />
+
 </RelativeLayout>
